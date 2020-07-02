@@ -5,6 +5,7 @@ def find_min_in_nested_arrays(src)
   src.each do|second|
     puts second[0]
     small=0
+    second.each do |num|
       puts num
       smoll=num if smoll >num
     end
