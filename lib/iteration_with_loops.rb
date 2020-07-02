@@ -4,7 +4,7 @@ def find_min_in_nested_arrays(src)
   ora=[]
   src.each do|second|
     puts second[0]
-    second.each do |num|
+    small=0
       puts num
       smoll=num if smoll >num
     end
