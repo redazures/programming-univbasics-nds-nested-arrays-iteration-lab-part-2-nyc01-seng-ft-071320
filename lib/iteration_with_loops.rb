@@ -2,14 +2,14 @@ def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
   ora=[]
-  small=0
-  src.each do|second|
-    puts second[0]
-    small=0
-    second.each do |num|
-      puts num
+  counter=0
+  while counter<src.length
+    smoll=src[counter][0]
+    src[counter].each do |num|
+      # puts num
       smoll=num if smoll >num
     end
+    counter+=1
     ora<<smoll
   end
   ora
