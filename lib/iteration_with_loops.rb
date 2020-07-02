@@ -3,13 +3,14 @@ def find_min_in_nested_arrays(src)
   # Produce a new Array that contains the smallest number of each of the nested arrays
   ora=[]
   src.each do|second|
+    puts second[0]
     second.each do |num|
       puts num
-      smoll=num if smoll >num
+      # smoll=num if smoll >num
     end
-    ora<<smoll
+    # ora<<smoll
   end
-  ora
+  # ora
 end
 
 apple=[[9,5,7,95],[6,9,100]]
